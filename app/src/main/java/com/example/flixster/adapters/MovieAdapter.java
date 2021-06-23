@@ -23,6 +23,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
     public interface OnClickListener {
@@ -96,6 +98,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                         .with(context)
                         .load(imageUrl)
                         .placeholder(R.drawable.flicks_backdrop_placeholder)
+                        .transform(new RoundedCornersTransformation(radius, margin))
                         .into(ivPoster);
             } else {
                 // else imageUrl = poster image
@@ -104,6 +107,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                         .with(context)
                         .load(imageUrl)
                         .placeholder(R.drawable.flicks_movie_placeholder)
+                        .transform(new RoundedCornersTransformation(radius, margin))
                         .into(ivPoster);
             }
 
