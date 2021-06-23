@@ -8,10 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.util.Log;
+import android.view.View;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.example.flixster.adapters.MovieAdapter;
+import com.example.flixster.databinding.ActivityMainBinding;
 import com.example.flixster.models.Movie;
 
 import org.json.JSONArray;
@@ -24,6 +26,8 @@ import java.util.List;
 import okhttp3.Headers;
 
 public class MainActivity extends AppCompatActivity {
+
+    ActivityMainBinding activityMainBinding;
 
     public static final String KEY_MOVIE_TITLE = "movie_title";
     public static final String KEY_MOVIE_OVERVIEW = "movie_overview";
@@ -39,8 +43,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        RecyclerView rvMovies = findViewById(R.id.rvMovies);
+        // setContentView(R.layout.activity_main);
+        activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = activityMainBinding.getRoot();
+        setContentView(view);
+        // RecyclerView rvMovies = findViewById(R.id.rvMovies);
+        RecyclerView rvMovies = activityMainBinding.rvMovies;
         movies = new ArrayList<>();
 
         MovieAdapter.OnClickListener onClickListener = new MovieAdapter.OnClickListener() {
