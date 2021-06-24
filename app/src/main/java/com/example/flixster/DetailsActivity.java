@@ -50,6 +50,7 @@ public class DetailsActivity extends AppCompatActivity {
     public void OnClickPoster(View view){
         Intent i = new Intent(DetailsActivity.this, MovieTrailerActivity.class);
 
+        
         startActivityForResult(i, MOVIE_TRAILER_CODE);
     }
 }
