@@ -16,6 +16,8 @@ import com.example.flixster.databinding.ActivityMainBinding;
 public class DetailsActivity extends AppCompatActivity {
     public static final int MOVIE_TRAILER_CODE = 21;
 
+    public static final String KEY_MOVIE_TRAILER_ID = "trailer_id";
+
     ActivityDetailsBinding detailsActivityBinding;
     
     String imageUrl;
@@ -50,7 +52,7 @@ public class DetailsActivity extends AppCompatActivity {
     public void OnClickPoster(View view){
         Intent i = new Intent(DetailsActivity.this, MovieTrailerActivity.class);
 
-        
+        i.putExtra(KEY_MOVIE_TRAILER_ID, );
         startActivityForResult(i, MOVIE_TRAILER_CODE);
     }
 }
