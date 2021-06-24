@@ -2,6 +2,7 @@ package com.example.flixster;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import com.example.flixster.databinding.ActivityDetailsBinding;
 import com.example.flixster.databinding.ActivityMainBinding;
 
 public class DetailsActivity extends AppCompatActivity {
+    public static final int MOVIE_TRAILER_CODE = 21;
 
     ActivityDetailsBinding detailsActivityBinding;
     
@@ -42,5 +44,12 @@ public class DetailsActivity extends AppCompatActivity {
                 .into(detailsActivityBinding.ivPosterDet);
 
         detailsActivityBinding.rbMovie.setRating(rating);
+    }
+
+
+    public void OnClickPoster(View view){
+        Intent i = new Intent(DetailsActivity.this, MovieTrailerActivity.class);
+
+        startActivityForResult(i, MOVIE_TRAILER_CODE);
     }
 }
