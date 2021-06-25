@@ -2,7 +2,7 @@
 
 **Flixter** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
-Time spent: **5** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -30,9 +30,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/PrimeBIue/Flixster/blob/master/Flixster_gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [Kap](https://getkap.co/).
+GIF created with [LICEcap](https://www.cockos.com/licecap/).
 
 ## Notes
 
@@ -43,6 +43,7 @@ In the case of the placeholder I had to make sure I trully understood the basic 
 some Google I was able to figure it out.
 In the case of the extra activity to display the movie details I revisited the resources from Day 1 and adapted them to this new proyect. With the foundation I built in Day 1
 the rest wasn't really that hard to figure out.
+When working on the youtube video player I had to solve an issue that apparently happens only on Android 11 where the app couldn't recognize or access the youtube app, it took some time but it worked in the end.
 
 ## Open-source libraries used
 
@@ -51,7 +52,7 @@ the rest wasn't really that hard to figure out.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2021] [Jorge Cabiedes]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
