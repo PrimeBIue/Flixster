@@ -51,7 +51,8 @@ public class DetailsActivity extends AppCompatActivity {
 
         GlideApp
                 .with(this)
-                .load(R.drawable.play_button)
+                .load(R.drawable.youtube_button)
+
                 .into(detailsActivityBinding.ivButton);
 
 
