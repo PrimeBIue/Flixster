@@ -2,6 +2,7 @@ package com.example.flixster.adapters;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.text.TextUtils;
 import android.util.proto.ProtoOutputStream;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,7 +81,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
+            tvTitle.setMaxLines(2);
+            tvTitle.setEllipsize(TextUtils.TruncateAt.END);
             tvOverview.setText(movie.getOverview());
+            tvOverview.setMaxLines(6);
+            tvOverview.setEllipsize(TextUtils.TruncateAt.END);
             String imageUrl;
 
             ivPoster.setOnClickListener(new View.OnClickListener() {
