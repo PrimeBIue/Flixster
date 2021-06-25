@@ -30,9 +30,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/PrimeBIue/Flixster/blob/master/Flixster_gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [Kap](https://getkap.co/).
+GIF created with [LICEcap](https://www.cockos.com/licecap/).
 
 ## Notes
 
@@ -43,6 +43,7 @@ In the case of the placeholder I had to make sure I trully understood the basic 
 some Google I was able to figure it out.
 In the case of the extra activity to display the movie details I revisited the resources from Day 1 and adapted them to this new proyect. With the foundation I built in Day 1
 the rest wasn't really that hard to figure out.
+When working on the 
 
 ## Open-source libraries used
 
