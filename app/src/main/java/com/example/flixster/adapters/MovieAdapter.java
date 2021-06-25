@@ -85,10 +85,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
-            tvTitle.setMaxLines(2);
+            tvTitle.setMaxLines(1);
             tvTitle.setEllipsize(TextUtils.TruncateAt.END);
             tvOverview.setText(movie.getOverview());
-            tvOverview.setMaxLines(6);
+            tvOverview.setMaxLines(5);
             tvOverview.setEllipsize(TextUtils.TruncateAt.END);
             String imageUrl;
 
