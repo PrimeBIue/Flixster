@@ -6,6 +6,22 @@
     android:layout_height="wrap_content">
 
     <ImageView
+        android:id="@+id/container"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/tvTitle"
+        android:layout_alignBottom="@+id/tvOverview"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-111dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="-68dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:background="@drawable/container" />
+
+    <ImageView
         android:id="@+id/ivPoster"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
@@ -22,18 +38,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="27dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         tools:text="Luca" />
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:text="kjdhfaksjdhlakjsdhflkajshdflakjshdflkajshdflkajhsdflkjahsdlfkjahsdafl" />
+
+        android:text="Test Overview" />
 </RelativeLayout>

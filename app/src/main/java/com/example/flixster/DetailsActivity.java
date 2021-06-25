@@ -13,6 +13,8 @@ import android.widget.TextView;
 import com.example.flixster.databinding.ActivityDetailsBinding;
 import com.example.flixster.databinding.ActivityMainBinding;
 
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 public class DetailsActivity extends AppCompatActivity {
 
     public static final String KEY_MOVIE_TRAILER_ID = "trailer_id";
@@ -43,16 +45,20 @@ public class DetailsActivity extends AppCompatActivity {
         imageUrl = getIntent().getStringExtra(MainActivity.KEY_POSTER_PATH);
         trailerId = getIntent().getStringExtra(MainActivity.KEY_MOVIE_TRAILER_ID);
 
+
+        int radius = 30;
+        int margin = 10;
         GlideApp
                 .with(this)
                 .load(imageUrl)
                 .placeholder(R.drawable.flicks_movie_placeholder)
+                .transform(new RoundedCornersTransformation(radius, margin))
                 .into(detailsActivityBinding.ivPosterDet);
 
         GlideApp
                 .with(this)
                 .load(R.drawable.youtube_button)
-
+                .transform(new RoundedCornersTransformation(radius, margin))
                 .into(detailsActivityBinding.ivButton);
 
 
