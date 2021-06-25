@@ -2,7 +2,11 @@ package com.example.flixster.adapters;
 
 import android.content.Context;
 import android.content.res.Configuration;
+
 import android.text.TextUtils;
+
+import android.util.Log;
+
 import android.util.proto.ProtoOutputStream;
 import android.view.LayoutInflater;
 import android.view.View;

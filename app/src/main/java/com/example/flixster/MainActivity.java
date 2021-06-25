@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String KEY_MOVIE_OVERVIEW = "movie_overview";
     public static final String KEY_POSTER_PATH = "poster_path";
     public static final String KEY_RATING = "movie_rating";
+    public static final String KEY_MOVIE_TRAILER_ID = "trailer_id";
     public static final int DETAILS_CODE = 20;
 
     public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=b87187fd7abfa4769160250c19b1a9ac";
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra(KEY_MOVIE_OVERVIEW, movies.get(position).getOverview());
                 i.putExtra(KEY_POSTER_PATH, movies.get(position).getPosterPath());
                 i.putExtra(KEY_RATING, movies.get(position).getRating());
+                i.putExtra(KEY_MOVIE_TRAILER_ID, movies.get(position).getTrailerId());
                 // Display activity
                 startActivityForResult(i, DETAILS_CODE);
             }
@@ -96,5 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "OnFailure");
             }
         });
+
+
     }
 }
