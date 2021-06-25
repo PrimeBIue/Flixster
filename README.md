@@ -43,7 +43,7 @@ In the case of the placeholder I had to make sure I trully understood the basic 
 some Google I was able to figure it out.
 In the case of the extra activity to display the movie details I revisited the resources from Day 1 and adapted them to this new proyect. With the foundation I built in Day 1
 the rest wasn't really that hard to figure out.
-When working on the 
+When working on the youtube video player I had to solve an issue that apparently happens only on Android 11 where the app couldn't recognize or access the youtube app, it took some time but it worked in the end.
 
 ## Open-source libraries used
 
