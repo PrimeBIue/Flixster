@@ -2,7 +2,7 @@
 
 **Flixter** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
-Time spent: **5** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -52,7 +52,7 @@ When working on the youtube video player I had to solve an issue that apparently
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2021] [Jorge Cabiedes]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
