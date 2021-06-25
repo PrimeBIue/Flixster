@@ -49,6 +49,12 @@ public class DetailsActivity extends AppCompatActivity {
                 .placeholder(R.drawable.flicks_movie_placeholder)
                 .into(detailsActivityBinding.ivPosterDet);
 
+        GlideApp
+                .with(this)
+                .load(R.drawable.play_button)
+                .into(detailsActivityBinding.ivButton);
+
+
         detailsActivityBinding.rbMovie.setRating(rating);
     }
 
