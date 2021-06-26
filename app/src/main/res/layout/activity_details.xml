@@ -65,7 +65,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="@android:color/primary_text_light"/>
 
     <ImageView
         android:id="@+id/ivButton"

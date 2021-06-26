@@ -42,7 +42,8 @@
         android:layout_toEndOf="@+id/ivPoster"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:text="Luca" />
+        tools:text="Luca"
+        android:textColor="@android:color/primary_text_light"/>
 
     <TextView
         android:id="@+id/tvOverview"
@@ -52,6 +53,6 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
-
+        android:textColor="@android:color/primary_text_light"
         android:text="Test Overview" />
 </RelativeLayout>
